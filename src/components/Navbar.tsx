@@ -1,4 +1,4 @@
-import { Home, Video, BookOpen, Newspaper, MessageSquare } from "lucide-react";
+import { Home, Video, BookOpen, Newspaper } from "lucide-react";
 import { Link, useLocation } from "react-router-dom";
 
 const Navbar = () => {
@@ -9,7 +9,6 @@ const Navbar = () => {
     { icon: <Video className="w-5 h-5" />, label: "Watch", path: "/watch" },
     { icon: <BookOpen className="w-5 h-5" />, label: "Manga", path: "/manga" },
     { icon: <Newspaper className="w-5 h-5" />, label: "News", path: "/news" },
-    { icon: <MessageSquare className="w-5 h-5" />, label: "Contact", path: "/contact" },
   ];
 
   return (
@@ -38,7 +37,6 @@ const Navbar = () => {
           </div>
           
           <div className="md:hidden">
-            {/* Mobile menu button - to be implemented */}
             <button className="text-gray-300 hover:text-primary">
               <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 6h16M4 12h16M4 18h16" />

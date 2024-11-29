@@ -8,7 +8,6 @@ import Index from "./pages/Index";
 import Watch from "./pages/Watch";
 import Manga from "./pages/Manga";
 import News from "./pages/News";
-import Contact from "./pages/Contact";
 
 const queryClient = new QueryClient();
 
@@ -24,7 +23,6 @@ const App = () => (
           <Route path="/watch" element={<Watch />} />
           <Route path="/manga" element={<Manga />} />
           <Route path="/news" element={<News />} />
-          <Route path="/contact" element={<Contact />} />
         </Routes>
       </BrowserRouter>
     </TooltipProvider>
