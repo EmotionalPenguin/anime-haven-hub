@@ -1,4 +1,4 @@
-import { Home, Video, BookOpen, Newspaper, CalendarClock, MessageSquare } from "lucide-react";
+import { Home, Video, BookOpen, Newspaper, MessageSquare } from "lucide-react";
 import { Link, useLocation } from "react-router-dom";
 
 const Navbar = () => {
@@ -9,7 +9,6 @@ const Navbar = () => {
     { icon: <Video className="w-5 h-5" />, label: "Watch", path: "/watch" },
     { icon: <BookOpen className="w-5 h-5" />, label: "Manga", path: "/manga" },
     { icon: <Newspaper className="w-5 h-5" />, label: "News", path: "/news" },
-    { icon: <CalendarClock className="w-5 h-5" />, label: "Upcoming", path: "/upcoming" },
     { icon: <MessageSquare className="w-5 h-5" />, label: "Contact", path: "/contact" },
   ];
 
