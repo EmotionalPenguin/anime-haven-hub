@@ -5,6 +5,30 @@ import { Play, BookOpen, Newspaper } from "lucide-react";
 const Index = () => {
   return (
     <div className="min-h-screen bg-dark">
+      {/* Hero Section */}
+      <div className="relative bg-gradient-to-r from-dark to-dark/90">
+        <div className="relative container mx-auto px-4 pt-32 pb-16">
+          <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold mb-6 bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent">
+            Welcome to AnimeHub
+          </h1>
+          <p className="text-lg md:text-xl text-gray-300 max-w-2xl mb-8">
+            Your ultimate destination for anime and manga content. Discover, watch, and read your favorite series all in one place.
+          </p>
+          <div className="flex flex-wrap gap-4">
+            <Link to="/watch">
+              <Button className="bg-white hover:bg-gray-100 text-dark font-semibold">
+                Start Watching
+              </Button>
+            </Link>
+            <Link to="/manga">
+              <Button variant="outline" className="border-white text-white hover:bg-white/10">
+                Read Manga
+              </Button>
+            </Link>
+          </div>
+        </div>
+      </div>
+
       {/* Navigation Cards Section */}
       <div className="container mx-auto px-4 py-8">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
@@ -46,30 +70,6 @@ const Index = () => {
               </p>
             </div>
           </Link>
-        </div>
-      </div>
-
-      {/* Hero Section */}
-      <div className="relative h-screen bg-gradient-to-r from-dark to-dark/90">
-        <div className="relative container mx-auto px-4 pt-32">
-          <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold mb-6 bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent">
-            Welcome to AnimeHub
-          </h1>
-          <p className="text-lg md:text-xl text-gray-300 max-w-2xl mb-8">
-            Your ultimate destination for anime and manga content. Discover, watch, and read your favorite series all in one place.
-          </p>
-          <div className="flex flex-wrap gap-4">
-            <Link to="/watch">
-              <Button className="bg-white hover:bg-gray-100 text-dark font-semibold">
-                Start Watching
-              </Button>
-            </Link>
-            <Link to="/manga">
-              <Button variant="outline" className="border-white text-white hover:bg-white/10">
-                Read Manga
-              </Button>
-            </Link>
-          </div>
         </div>
       </div>
     </div>
