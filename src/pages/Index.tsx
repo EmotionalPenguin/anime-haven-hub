@@ -6,16 +6,7 @@ const Index = () => {
   return (
     <div className="min-h-screen bg-dark">
       {/* Hero Section */}
-      <div className="relative h-screen">
-        <div className="absolute inset-0">
-          <img
-            src="/lovable-uploads/4dc7b278-f40a-48f6-aa81-6b8e4bc702a3.png"
-            alt="Hero background"
-            className="w-full h-full object-cover"
-          />
-          <div className="absolute inset-0 bg-gradient-to-r from-dark/90 to-dark/50" />
-        </div>
-        
+      <div className="relative h-screen bg-gradient-to-r from-dark to-dark/90">
         <div className="relative container mx-auto px-4 pt-32">
           <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold mb-6 bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent">
             Welcome to AnimeHub
