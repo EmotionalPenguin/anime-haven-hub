@@ -6,8 +6,24 @@ const Index = () => {
   return (
     <div className="min-h-screen bg-dark">
       {/* Hero Section */}
-      <div className="relative bg-gradient-to-r from-dark to-dark/90">
-        <div className="relative container mx-auto px-4 pt-32 pb-16">
+      <div className="relative">
+        {/* Background Image Container */}
+        <div 
+          className="absolute inset-0 z-0"
+          style={{
+            backgroundImage: "url('/lovable-uploads/32d3cc6a-a1bd-4670-98c7-96db255b03ef.png')",
+            backgroundSize: 'cover',
+            backgroundPosition: 'center',
+            maskImage: 'linear-gradient(to bottom, rgba(0,0,0,1) 0%, rgba(0,0,0,0) 100%)',
+            WebkitMaskImage: 'linear-gradient(to bottom, rgba(0,0,0,1) 0%, rgba(0,0,0,0) 100%)',
+          }}
+        >
+          {/* Blur and Darkening Overlay */}
+          <div className="absolute inset-0 backdrop-blur-sm bg-dark/70"></div>
+        </div>
+
+        {/* Content */}
+        <div className="relative z-10 container mx-auto px-4 pt-32 pb-16">
           <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold mb-6 bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent">
             Welcome to AnimeHub
           </h1>
