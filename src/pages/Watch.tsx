@@ -13,25 +13,25 @@ const streamingPlatforms: StreamingPlatform[] = [
     name: "Crunchyroll",
     url: "https://www.crunchyroll.com",
     description: "World's largest anime streaming platform",
-    logo: "/placeholder.svg"
+    logo: "/lovable-uploads/b79b4bbd-afc6-4005-8a3b-3844ad63de22.png"
   },
   {
     name: "Funimation",
     url: "https://www.funimation.com",
     description: "Home to a large collection of dubbed anime",
-    logo: "/placeholder.svg"
+    logo: "/lovable-uploads/448a9aa4-262f-4dd4-942f-feb62fe592cc.png"
   },
   {
     name: "Netflix Anime",
     url: "https://www.netflix.com/browse/genre/7424",
     description: "Netflix's dedicated anime collection",
-    logo: "/placeholder.svg"
+    logo: "/lovable-uploads/953ab87c-2de0-4edc-b6cd-cb22af3766cb.png"
   },
   {
     name: "HIDIVE",
     url: "https://www.hidive.com",
     description: "Specialized anime streaming service",
-    logo: "/placeholder.svg"
+    logo: "/lovable-uploads/9d1f2de6-c402-45e3-9160-741bb1c242fa.png"
   }
 ];
 
@@ -55,7 +55,7 @@ const Watch = () => {
               <img
                 src={platform.logo}
                 alt={platform.name}
-                className="w-16 h-16 mb-4 rounded"
+                className="w-32 h-32 mb-4 mx-auto object-contain"
               />
               <h3 className="text-xl font-semibold mb-2">{platform.name}</h3>
               <p className="text-gray-400 mb-4">{platform.description}</p>
