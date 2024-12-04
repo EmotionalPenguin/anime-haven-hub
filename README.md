@@ -5,7 +5,7 @@ Watch Anime: Curated links to reliable streaming platforms.
 Read Manga: A collection of resources for manga readers.
 Anime News: Stay updated with the latest happenings in the anime world.
 This project combines functionality and user-friendliness to provide a seamless experience for anime and manga lovers.
-## Project info
+## Project
 
 **URL**: [https://animehavenhub.netlify.app/]
 
